@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Dashboard</h2>
+
+<h3>Your Websites</h3>
+{% for website in websites %}
+  <p>{{ website.name }} ({{ website.status }})</p>
+  <a href="{{ url_for('render_website', website_id=website._id) }}">View</a>
+  <a href="/start_website/{{ website._id }}">Start</a>
+  <a href="/stop_website/{{ website._id }}">Stop</a>
+  <a href="/delete_website/{{ website._id }}">Delete</a>
+{% endfor %}
+
+
+<form id="createWebsiteForm" method="post">
+  <label for="name">Website Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <input type="submit" value="Create Website">
+</form> 
+
+<div id="popup" style="display: none;">
+  <p id="popupText"></p>
+  <button onclick="document.getElementById('popup').style.display='none'">Close</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$('#createWebsiteForm').on('submit', function(e) {
+  e.preventDefault();
+
+  var name = $('#name').val();
+
+  $.ajax({
+    url: '/create_website',
+    method: 'POST',
+    data: {name: name},
+    success: function(response) {
+      if (response == 'Website name already exists') {
+        $('#popupText').text(response);
+        $('#popup').show();
+      } else {
+        location.reload();
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

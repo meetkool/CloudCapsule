@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hosting Platform</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <!-- Add any other navigation links -->
+    </nav>
+
+    <div id="upload-section">
+        <h3>Upload Files</h3>
+        <form id="uploadForm" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#uploadForm').submit(function(e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                $.ajax({
+                    url: '/upload',
+                    type: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        console.log(response);
+                        // Handle the response as needed
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+        });
+    </script>
+</body>
+</html>
