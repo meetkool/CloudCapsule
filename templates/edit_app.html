@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Hosting Application</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Edit Hosting Application</h1>
+  <form method="POST" action="/apps/{{ app.id }}/edit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="{{ app.name }}" required>
+    <label for="domain">Domain:</label>
+    <input type="text" id="domain" name="domain" value="{{ app.domain }}" required>
+    <label for="plan">Plan:</label>
+    <input type="text" id="plan" name="plan" value="{{ app.plan }}" required>
+    <button type="submit">Save Changes</button>
+  </form>
+</body>
+</html>

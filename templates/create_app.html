@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Hosting Application</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Create Hosting Application</h1>
+  <form method="POST" action="/apps/create">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="domain">Domain:</label>
+    <input type="text" id="domain" name="domain" required>
+    <label for="plan">Plan:</label>
+    <input type="text" id="plan" name="plan" required>
+    <button type="submit">Create Application</button>
+  </form>
+</body>
+</html>

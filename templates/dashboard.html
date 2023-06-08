@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Welcome to the Dashboard, {{ current_user.username }}!</h1>
+  <h2>Your Hosting Applications</h2>
+  {% if user_apps %}
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Domain</th>
+          <th>Plan</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for app in user_apps %}
+          <tr>
+            <td>{{ app.name }}</td>
+            <td>{{ app.domain }}</td>
+            <td>{{ app.plan }}</td>
+            <td>
+              <a href="/apps/{{ app.id }}">View Details</a> |
+              <a href="/apps/{{ app.id }}/edit">Edit</a> |
+              <form method="POST" action="/apps/{{ app.id }}/delete" onsubmit="return confirm('Are you sure you want to delete this application?');">
+                <button type="submit" class="delete-btn">Delete</button>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No hosting applications found.</p>
+  {% endif %}
+  <a href="/apps/create">Create New Application</a>
+  <br><br>
+  <a href="/logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,303 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:root:User logged in: kooljool1
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:39:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:39:27] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:39:27] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:39:27] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:39:27] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:04] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:06] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:13] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:root:User logged in: kooljool1
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:19] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:19] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:42:19] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:04] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:05] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:05] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Found user data in database: {'_id': ObjectId('648232ca88f646fe62ecc092'), 'username': 'kooljool1', 'email': 'iitjeemeet@gmail.com', 'password': 'pbkdf2:sha256:600000$6vLNKnj9uNlkItgs$fc7685039d3bb09841a8afafb06f7959fcc193a473f04e330963581806adc322'}
+INFO:root:Successfully logged in user: kooljool1
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:14] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:14] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:46:14] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:52:31] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:52:31] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:root:Successfully logged in user: kooljool1
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:53:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:53:38] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:53:38] "GET /login?next=/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 01:53:38] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:26] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:26] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:26] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:37] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:37] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:37] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:37] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:04:37] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:32] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:32] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:32] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:32] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:32] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * To enable the debugger you need to enter the security pin:
+INFO:werkzeug: * Debugger pin code: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:43] "GET /register?__debugger__=yes&cmd=printpin&s=lEXUOLsObOWTIl690NIb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:11:49] "GET /register?__debugger__=yes&cmd=pinauth&pin=&s=lEXUOLsObOWTIl690NIb HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:08] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:08] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:New user registered: kooljool2
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:23] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:root:Dashboard route accessed. User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:23] "GET /dashboard HTTP/1.1" 200 -
+INFO:root:User logged out
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:27] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:29] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:29] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:root:Dashboard route accessed. User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:38] "GET /dashboard HTTP/1.1" 200 -
+INFO:root:User logged out
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:44] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:44] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:49] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:root:Dashboard route accessed. User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:12:55] "GET /dashboard HTTP/1.1" 200 -
+INFO:root:User logged out
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:39] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:39] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:39] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:42] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:42] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:15:42] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:10] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:10] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:10] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:13] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:13] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:root:Dashboard route accessed. User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:28:26] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:41] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:43] "[35m[1mGET /apps/create HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:43] "GET /apps/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:43] "GET /apps/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:43] "GET /apps/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:38:43] "[36mGET /apps/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:42] "GET /apps/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:50] "[32mPOST /apps/create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:50] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:57] "[32mPOST /apps/6482439eb622842132b96d9c/delete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:57] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:39:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:20] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:26] "GET /apps/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:31] "[32mPOST /apps/create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:31] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:46:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:47:59] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:47:59] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:47:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:49:19] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:49:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:49:21] "GET /apps/6482452fb622842132b96d9d HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:49:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:33] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:33] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:38] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:41] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:50] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:52] "GET /apps/6482452fb622842132b96d9d/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:56] "[32mPOST /apps/6482452fb622842132b96d9d/edit HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:56] "GET /apps/6482452fb622842132b96d9d HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:51:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:52:01] "[32mPOST /apps/6482452fb622842132b96d9d/delete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:52:01] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:52:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 701-866-529
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:58:26] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:58:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:58:27] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 02:58:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
