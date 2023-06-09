@@ -2232,3 +2232,189 @@ INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 17:55:39] "[36mGET /static/style.css H
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 17:55:41] "GET /dashboard HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 17:55:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 17:55:41] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:29] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:29] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:46] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:46] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:00:47] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:01:12] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:01:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:01:15] "GET /apps/648271b4adfe75de73f4554b/get-file?file=lol_.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:01:21] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:01:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:07:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:07:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:07:54] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:07:54] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:07:54] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:11] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:11] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:11] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:18] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:23] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:23] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:31] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:08:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:50] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:57] "[32mPOST /apps/648271b4adfe75de73f4554b/upload HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:57] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:59] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:09:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:01] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:03] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:13] "[32mPOST /apps/648271b4adfe75de73f4554b/upload HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:13] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:16] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:17] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:20] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:26] "GET /apps/648271b4adfe75de73f4554b/get-file?file=rootfs-pkgs.txt HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:33] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/swapfile HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:35] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:36] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:38] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:41] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:45] "[36mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:50] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/arcadia-main HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:54] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:59] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=//srv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:10:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:01] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=//srv/ftp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:03] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=//srv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:04] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=//srv/http HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:04] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=//srv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:05] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:06] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:07] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:07] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:09] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:09] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:11] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:22] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:25] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:27] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:28] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=// HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:35] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:38] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:46] "[32mPOST /apps/648271b4adfe75de73f4554b/upload HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:46] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:55] "[32mPOST /apps/648271b4adfe75de73f4554b/upload HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:55] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:11:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:29] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:52] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:12:55] "[35m[1mGET /apps/648271b4adfe75de73f4554b/get-file?file=1.png HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:29] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:35] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:37] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:15:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:12] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:13] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:14] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:15] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:18] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:18:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:50] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:50] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:53] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:53] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:54] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:58] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/arcadia-main HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:20:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:00] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:03] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:05] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:08] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder=/kooljoool HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:12] "GET /apps/648271b4adfe75de73f4554b/edit?subfolder= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 18:21:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

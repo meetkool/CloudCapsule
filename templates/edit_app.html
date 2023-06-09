@@ -49,29 +49,32 @@
     </form>
 
     <!-- List of existing files -->
-    <h2 class="text-2xl font-bold my-4">Existing Files</h2>
-    <!-- Go Back link -->
-    {% if current_subfolder %}
-      <a href="/apps/{{ hosting_app.id }}/edit?subfolder={{ parent_folder }}" class="text-blue-500 hover:underline"><i class="fas fa-chevron-left"></i> Go Back</a>
-    {% endif %}
-    <ul>
-      {% for item in files %}
-          {% if item.type == 'folder' %}
-              <!-- Link the folder so you can navigate into it -->
-              <li>
-                  <i class="fas fa-folder"></i>
-                  <a href="{{ url_for('edit_app', app_id=hosting_app.id, subfolder=current_subfolder ~ '/' ~ item.name) }}">{{ item.name }}</a>
-              </li>
-          {% else %}
-              <li>
-                  <i class="fas fa-file"></i>
-                  <a href="/websites/{{ hosting_app.user_id }}/{{ hosting_app.website_id }}/{{ item.name }}">{{ item.name }}</a>
-                  <a href="#" onclick="openEditor('{{ item.name }}')" class="text-blue-500 hover:underline"><i class="fas fa-edit"></i> Edit</a>
-                  <a href="/apps/{{ hosting_app.id }}/delete-file?file={{ item.name }}" onclick="return confirm('Are you sure you want to delete this file?');" class="text-red-500 hover:underline"><i class="fas fa-trash-alt"></i> Delete</a>
-              </li>
-          {% endif %}
-      {% endfor %}
-    </ul>
+
+<h2 class="text-2xl font-bold my-4">Existing Files</h2>
+<!-- Go Back link -->
+{% if current_subfolder %}
+  <a href="/apps/{{ hosting_app.id }}/edit?subfolder={{ parent_folder }}" class="text-blue-500 hover:underline"><i class="fas fa-chevron-left"></i> Go Back</a>
+{% endif %}
+<ul>
+  {% for item in files %}
+      {% if item.type == 'folder' %}
+          <!-- Link the folder so you can navigate into it -->
+          <li>
+              <i class="fas fa-folder"></i>
+              <a href="{{ url_for('edit_app', app_id=hosting_app.id, subfolder=current_subfolder ~ '/' ~ item.name) }}">{{ item.name }}</a>
+          </li>
+      {% else %}
+          <li>
+              <i class="fas fa-file"></i>
+              <a href="/websites/{{ hosting_app.user_id }}/{{ hosting_app.website_id }}/{{ current_subfolder ~ '/' ~ item.name }}">{{ item.name }}</a>
+              <a href="#" onclick="openEditor('{{ current_subfolder ~ '/' ~ item.name }}')" class="text-blue-500 hover:underline"><i class="fas fa-edit"></i> Edit</a>
+              <a href="/apps/{{ hosting_app.id }}/delete-file?file={{ current_subfolder ~ '/' ~ item.name }}" onclick="return confirm('Are you sure you want to delete this file?');" class="text-red-500 hover:underline"><i class="fas fa-trash-alt"></i> Delete</a>
+          </li>
+      {% endif %}
+  {% endfor %}
+</ul>
+...
+
 
     <!-- File Editor Modal -->
     <div id="fileEditorModal" style="display: none;">

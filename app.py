@@ -200,7 +200,7 @@ def edit_app(app_id):
     user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"], subfolder)
 
     # Compute the parent folder's path
-    parent_folder = str(Path(subfolder).parent)
+    parent_folder = "/".join(subfolder.split("/")[:-1]) if subfolder else ""
 
     if os.path.exists(user_folder):
         files_and_folders = [{'name': name, 'type': 'folder' if os.path.isdir(os.path.join(user_folder, name)) else 'file'} for name in os.listdir(user_folder)]
