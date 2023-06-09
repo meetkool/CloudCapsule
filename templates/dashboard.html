@@ -4,33 +4,35 @@
   <title>Dashboard</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+  crossorigin="anonymous">
 </head>
 <body>
-  <h1>Welcome to the Dashboard, {{ current_user.username }}!</h1>
-  <h2>Your Hosting Applications</h2>
+  <h1 class="text-3xl font-bold mb-4">Welcome to the Dashboard, {{ current_user.username }}!</h1>
+  <h2 class="text-2xl font-bold">Your Hosting Applications</h2>
   {% if user_apps %}
-    <table>
+    <table class="w-full mt-4">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Domain</th>
-          <th>Plan</th>
-          <th>Actions</th>
+          <th class="py-2">Name</th>
+          <th class="py-2">Domain</th>
+          <th class="py-2">Plan</th>
+          <th class="py-2">Actions</th>
         </tr>
       </thead>
       <tbody>
         {% for app in user_apps %}
           <tr>
-            <td>{{ app.name }}</td>
-            <td>{{ app.domain }}</td>
-            <td>{{ app.plan }}</td>
-            <td>
-              <a href="/apps/{{ app.id }}">View Details</a> |
-              <a href="/apps/{{ app.id }}/edit">Edit</a> |
-              <a href="/websites/{{ current_user.id }}/{{ app.website_id }}/index.html">View Website</a>
+            <td class="py-2">{{ app.name }}</td>
+            <td class="py-2">{{ app.domain }}</td>
+            <td class="py-2">{{ app.plan }}</td>
+            <td class="py-2">
+              <a href="/apps/{{ app.id }}" class="text-blue-500 hover:underline"><i class="fas fa-eye"></i> View Details</a> |
+              <a href="/apps/{{ app.id }}/edit" class="text-blue-500 hover:underline"><i class="fas fa-edit"></i> Edit</a> |
+              <a href="/websites/{{ current_user.id }}/{{ app.website_id }}/index.html" class="text-blue-500 hover:underline"><i class="fas fa-globe"></i> View Website</a>
               <form method="POST" action="/apps/{{ app.id }}/delete" onsubmit="return confirm('Are you sure you want to delete this application?');">
-                <button type="submit" class="delete-btn">Delete</button>
+                <button type="submit" class="delete-btn"><i class="fas fa-trash-alt"></i> Delete</button>
               </form>
             </td>
           </tr>
@@ -40,8 +42,8 @@
   {% else %}
     <p>No hosting applications found.</p>
   {% endif %}
-  <a href="/apps/create">Create New Application</a>
+  <a href="/apps/create" class="text-blue-500 hover:underline"><i class="fas fa-plus"></i> Create New Application</a>
   <br><br>
-  <a href="/logout">Logout</a>
+  <a href="/logout" class="text-blue-500 hover:underline"><i class="fas fa-sign-out-alt"></i> Logout</a>
 </body>
 </html>

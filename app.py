@@ -1,12 +1,16 @@
 import os
 import re
 import logging
-from flask import Flask, render_template, redirect, request, flash, send_from_directory
+from flask import Flask, render_template, redirect, request, flash, send_from_directory , jsonify
 from flask_pymongo import PyMongo
 from flask_login import LoginManager, login_user, logout_user, login_required, UserMixin, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from bson.objectid import ObjectId
+import shutil
+import zipfile
+from pathlib import Path
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
@@ -173,6 +177,7 @@ def app_details(app_id):
 @login_required
 def edit_app(app_id):
     app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+
     if not app_data:
         flash("Application not found.", "error")
         return redirect("/dashboard")
@@ -185,13 +190,24 @@ def edit_app(app_id):
         plan = request.form["plan"]
 
         mongo.db.apps.update_one({"_id": ObjectId(app_id)}, {"$set": {"name": name, "domain": domain, "plan": plan}})
+
         flash("Application updated successfully!", "success")
         return redirect("/apps/" + app_id)
-        
-    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
-    files = os.path.exists(user_folder) and os.listdir(user_folder) or []
-    return render_template("edit_app.html", hosting_app=hosting_app, files=files)
 
+    # Get subfolder path
+    subfolder = request.args.get("subfolder", "")
+    current_subfolder = subfolder  # Initialize current_subfolder
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"], subfolder)
+
+    # Compute the parent folder's path
+    parent_folder = str(Path(subfolder).parent)
+
+    if os.path.exists(user_folder):
+        files_and_folders = [{'name': name, 'type': 'folder' if os.path.isdir(os.path.join(user_folder, name)) else 'file'} for name in os.listdir(user_folder)]
+    else:
+        files_and_folders = []
+
+    return render_template("edit_app.html", hosting_app=hosting_app, files=files_and_folders, current_subfolder=current_subfolder, parent_folder=parent_folder)
 
 
 
@@ -200,6 +216,8 @@ def serve_website(user_id, website_id, filename):
     user_folder = os.path.join(app.config['WEBSITES_FOLDER'], user_id, website_id)
     return send_from_directory(user_folder, filename)
 
+
+from flask import render_template_string
 
 @app.route("/apps/<app_id>/upload", methods=['POST'])
 @login_required
@@ -226,7 +244,12 @@ def upload_files(app_id):
     file_extension = file.filename.rsplit('.', 1)[1].lower()
     if '.' in file.filename and file_extension not in allowed_extensions:
         flash('File extension not allowed!', 'error')
-        return redirect("/apps/" + app_id + "/edit")
+        return render_template_string('''
+            <script>
+                alert("File extension not allowed!");
+                window.location.href = "/apps/{{ app_id }}/edit";
+            </script>
+        ''', app_id=app_id)
     
     filename = secure_filename(file.filename)
     user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
@@ -234,6 +257,14 @@ def upload_files(app_id):
     
     flash('File successfully uploaded', "success")
     return redirect("/apps/" + app_id + "/edit")
+
+    filename = secure_filename(file.filename)
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    file.save(os.path.join(user_folder, filename))
+    
+    flash('File successfully uploaded', "success")
+    return redirect("/apps/" + app_id + "/edit")
+
 
 
 @app.route("/apps/<app_id>/files")
@@ -247,6 +278,108 @@ def view_files(app_id):
     user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
     files = os.listdir(user_folder) if os.path.exists(user_folder) else []
     return render_template("view_files.html", files=files, app_id=app_id)
+
+@app.route("/apps/<app_id>/create-folder", methods=['POST'])
+@login_required
+def create_folder(app_id):
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    if not app_data:
+        flash("Application not found.", "error")
+        return redirect("/dashboard")
+
+    folder_name = request.form['folder_name']
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"], folder_name)
+    
+    if not os.path.exists(user_folder):
+        os.makedirs(user_folder)
+        flash('Folder created successfully', "success")
+    else:
+        flash('Folder already exists', "error")
+        
+    return redirect("/apps/" + app_id + "/edit")
+
+@app.route("/apps/<app_id>/delete-file", methods=['GET'])
+@login_required
+def delete_file(app_id):
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    if not app_data:
+        flash("Application not found.", "error")
+        return redirect("/dashboard")
+
+    file = request.args.get('file')
+    file_path = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"], file)
+    
+    if os.path.exists(file_path):
+        os.remove(file_path)
+        flash('File deleted successfully', "success")
+    else:
+        flash('File not found', "error")
+
+    return redirect("/apps/" + app_id + "/edit")
+
+@app.route("/apps/<app_id>/upload-unzip", methods=['POST'])
+@login_required
+def upload_unzip(app_id):
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    if not app_data:
+        flash("Application not found.", "error")
+        return redirect("/dashboard")
+
+    if 'zip_file' not in request.files:
+        flash('No file part', "error")
+        return redirect("/apps/" + app_id + "/edit")
+    
+    file = request.files['zip_file']
+    
+    if file.filename == '':
+        flash('No selected file', "error")
+        return redirect("/apps/" + app_id + "/edit")
+    
+    if file.filename.endswith('.zip'):
+        filename = secure_filename(file.filename)
+        user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+        file.save(os.path.join(user_folder, filename))
+        
+        with zipfile.ZipFile(os.path.join(user_folder, filename), 'r') as zip_ref:
+            zip_ref.extractall(user_folder)
+        
+        os.remove(os.path.join(user_folder, filename))
+        flash('Zip file uploaded and unzipped successfully', "success")
+    else:
+        flash('File is not a zip file', "error")
+
+    return redirect("/apps/" + app_id + "/edit")
+
+@app.route('/apps/<app_id>/get-file', methods=['GET'])
+def get_file(app_id):
+    filename = request.args.get('file')
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    file_path = os.path.join(user_folder, filename)
+
+    if os.path.isfile(file_path):
+        with open(file_path, 'r') as file:
+            content = file.read()
+        return jsonify({'content': content})
+    else:
+        flash('File not found', "error")
+        return jsonify({'error': 'File not found'})
+
+@app.route('/apps/<app_id>/save-file', methods=['POST'])
+def save_file(app_id):
+    filename = request.form.get('filename')
+    content = request.form.get('content')
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    file_path = os.path.join(user_folder, filename)
+
+    if os.path.isfile(file_path):
+        with open(file_path, 'w') as file:
+            file.write(content)
+        return jsonify({'message': 'File saved successfully'})
+    else:
+        flash('File not found', "error")
+        return jsonify({'error': 'File not found'})
 
 
 
