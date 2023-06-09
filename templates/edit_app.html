@@ -6,20 +6,33 @@
 </head>
 <body>
   <h1>Edit Hosting Application</h1>
-  <form method="POST" action="/apps/{{ app.id }}/edit">
+
+  <!-- Application form -->
+  <form method="POST" action="/apps/{{ hosting_app.id }}/edit">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" value="{{ app.name }}" required>
+    <input type="text" id="name" name="name" value="{{ hosting_app.name }}" required>
     <label for="domain">Domain:</label>
-    <input type="text" id="domain" name="domain" value="{{ app.domain }}" required>
+    <input type="text" id="domain" name="domain" value="{{ hosting_app.domain }}" required>
     <label for="plan">Plan:</label>
-    <input type="text" id="plan" name="plan" value="{{ app.plan }}" required>
-    <h2>Additional Files</h2>
-    {% for file in app.files %}
-      <p>{{ file }}</p>
-    {% endfor %}
-    <label for="additional_files">Upload additional files:</label>
-    <input type="file" id="additional_files" name="additional_files[]" multiple>
+    <input type="text" id="plan" name="plan" value="{{ hosting_app.plan }}" required>
     <button type="submit">Save Changes</button>
   </form>
+
+  <!-- File upload form -->
+  <h2>Upload Additional Files</h2>
+  <form method="POST" action="/apps/{{ hosting_app.id }}/upload" enctype="multipart/form-data">
+    <label for="website_file">Select File:</label>
+    <input type="file" id="website_file" name="website_file" required>
+    <button type="submit">Upload File</button>
+  </form>
+
+  <!-- List of existing files -->
+  <h2>Existing Files</h2>
+  <ul>
+    {% for file in files %}
+      <li><a href="/websites/{{ hosting_app.user_id }}/{{ hosting_app.website_id }}/{{ file }}">{{ file }}</a></li>
+    {% endfor %}
+  </ul>
+
 </body>
 </html>

@@ -1157,3 +1157,349 @@ INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:00:12] "[36mGET /websites/64823d2f0
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:00:12] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/style.css HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:00:12] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/script.js HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:00:12] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/domain.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:03:58] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:03:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:03:58] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:04:01] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:04:01] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:04:01] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:04:01] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:04:01] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:44] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:44] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:44] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:44] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:44] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:45] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:06:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:07:21] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:07:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:07:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:07:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:07:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:18] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:18] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:18] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:18] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:18] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:19] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:13:20] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:46] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:46] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:47] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:14:48] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:18:21] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:18:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:18:21] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:18:22] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:18:22] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:05] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:05] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:05] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:05] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:05] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:12] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:22] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:27] "[36mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/index.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:27] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:27] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:22:27] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/domain.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:24:47] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:24:47] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:24:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:24:48] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:24:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:26:45] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:26:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:26:46] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:26:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:26:52] "[31m[1mPOST /apps//upload HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:29:00] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:29:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:29:04] "[31m[1mPOST /apps//upload HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:30:21] "[31m[1mPOST /apps//upload HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:36:06] "[31m[1mPOST /apps//upload HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:36:15] "[31m[1mPOST /apps//upload HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:11] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:31] "GET /websites/64823d2f0890a8d85186231d/648277b1e4523b2a6a7ce06e/index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:31] "[33mGET /websites/64823d2f0890a8d85186231d/648277b1e4523b2a6a7ce06e/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:31] "[33mGET /websites/64823d2f0890a8d85186231d/648277b1e4523b2a6a7ce06e/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:31] "[33mGET /websites/64823d2f0890a8d85186231d/648277b1e4523b2a6a7ce06e/domain.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:43] "[36mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/index.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:43] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:43] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:37:43] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/domain.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:38:16] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:38:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:38:21] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:40:31] "GET /apps/648271b4adfe75de73f4554b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:40:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:40:41] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:40:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:08] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:47] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:54] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:41:54] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:00] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:00] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:07] "[36mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/index.html HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:07] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:07] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:42:07] "[33mGET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/domain.ttf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:44:24] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:46:48] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:46:51] "[31m[1mPOST /apps//edit HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:10] "GET /apps/648271b4adfe75de73f4554b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:23] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:23] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:23] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:23] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:47:23] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:46] "[33mGET /apps/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:49] "[36mGET /static/register.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:49] "[33mGET /static/your-background-image.jpg HTTP/1.1[0m" 404 -
+INFO:root:Successfully logged in user: kooljool2
+INFO:root:User is authenticated: True
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:57] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:48:57] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:49:03] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:49:03] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:49:03] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:49:03] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:29] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:29] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:29] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:29] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:29] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:30] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:30] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:30] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:31] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:51:31] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Detected change in '/home/meet/projects/hosting-platform/app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-746-371
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:52:21] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:52:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:53:00] "[35m[1mGET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:53:00] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:53:00] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:53:00] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:53:00] "[36mGET /apps/648271b4adfe75de73f4554b/edit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:32] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:35] "[32mPOST /apps/648271b4adfe75de73f4554b/upload HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:35] "GET /apps/648271b4adfe75de73f4554b/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 07:54:38] "GET /websites/64823d2f0890a8d85186231d/648271b4adfe75de73f4554a/icon.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Jun/2023 08:26:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

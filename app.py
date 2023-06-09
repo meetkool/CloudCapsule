@@ -177,6 +177,8 @@ def edit_app(app_id):
         flash("Application not found.", "error")
         return redirect("/dashboard")
 
+    hosting_app = HostingApplication(app_data)
+
     if request.method == "POST":
         name = request.form["name"]
         domain = request.form["domain"]
@@ -185,14 +187,67 @@ def edit_app(app_id):
         mongo.db.apps.update_one({"_id": ObjectId(app_id)}, {"$set": {"name": name, "domain": domain, "plan": plan}})
         flash("Application updated successfully!", "success")
         return redirect("/apps/" + app_id)
+        
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    files = os.path.exists(user_folder) and os.listdir(user_folder) or []
+    return render_template("edit_app.html", hosting_app=hosting_app, files=files)
 
-    app = HostingApplication(app_data)
-    return render_template("edit_app.html", app=app)
+
+
 
 @app.route('/websites/<user_id>/<website_id>/<path:filename>')
 def serve_website(user_id, website_id, filename):
     user_folder = os.path.join(app.config['WEBSITES_FOLDER'], user_id, website_id)
     return send_from_directory(user_folder, filename)
+
+
+@app.route("/apps/<app_id>/upload", methods=['POST'])
+@login_required
+def upload_files(app_id):
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    if not app_data:
+        flash("Application not found.", "error")
+        return redirect("/dashboard")
+
+    # Check if the post request has the file part
+    if 'website_file' not in request.files:
+        flash('No file part', "error")
+        return redirect("/apps/" + app_id + "/edit")
+    
+    file = request.files['website_file']
+    
+    # If user does not select file, browser also
+    # submit an empty part without filename
+    if file.filename == '':
+        flash('No selected file', "error")
+        return redirect("/apps/" + app_id + "/edit")
+    
+    allowed_extensions = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'html', 'js', 'css'])
+    file_extension = file.filename.rsplit('.', 1)[1].lower()
+    if '.' in file.filename and file_extension not in allowed_extensions:
+        flash('File extension not allowed!', 'error')
+        return redirect("/apps/" + app_id + "/edit")
+    
+    filename = secure_filename(file.filename)
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    file.save(os.path.join(user_folder, filename))
+    
+    flash('File successfully uploaded', "success")
+    return redirect("/apps/" + app_id + "/edit")
+
+
+@app.route("/apps/<app_id>/files")
+@login_required
+def view_files(app_id):
+    app_data = mongo.db.apps.find_one({"_id": ObjectId(app_id)})
+    if not app_data:
+        flash("Application not found.", "error")
+        return redirect("/dashboard")
+
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id), app_data["website_id"])
+    files = os.listdir(user_folder) if os.path.exists(user_folder) else []
+    return render_template("view_files.html", files=files, app_id=app_id)
+
 
 
 @app.errorhandler(404)
