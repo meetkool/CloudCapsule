@@ -3,6 +3,8 @@
 <head>
   <title>Dashboard</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
+
 </head>
 <body>
   <h1>Welcome to the Dashboard, {{ current_user.username }}!</h1>
@@ -26,6 +28,7 @@
             <td>
               <a href="/apps/{{ app.id }}">View Details</a> |
               <a href="/apps/{{ app.id }}/edit">Edit</a> |
+              <a href="/websites/{{ current_user.id }}/{{ app.website_id }}/index.html">View Website</a>
               <form method="POST" action="/apps/{{ app.id }}/delete" onsubmit="return confirm('Are you sure you want to delete this application?');">
                 <button type="submit" class="delete-btn">Delete</button>
               </form>

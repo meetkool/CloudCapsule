@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#page1 {
+    height: 110vh;
+    width: 100vw;
+
+    background-color: #C4BCB3;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+
+#nav img {
+    height: 29px;
+    width: 30%;
+}
+
+#nav h5 {
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+
+}
+
+#nav i {
+    width: 30%;
+    text-align: right;
+}
+
+#elems {
+    /* background-color: red; */
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1 {
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+
+
+}
+
+#elem2 {
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 2px solid #acacac;
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 2px solid #a5a5a5;
+}
+
+#elem3 {
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+#elem1 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#elem3 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div:hover img {
+    scale: 1.1;
+}
+
+#elem1 h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#elem1 h4 span {
+    background-color: #B43B12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#elem1 p {
+    font-size: 23px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+
+#elem3 h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+
+#elem3 h4 span {
+    background-color: #B43B12;
+    color: #C4BCB3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#elem3 p {
+    font-size: 23px;
+    font-family: domain;
+    font-weight: 100;
+    color: #656565;
+}
+
+#elem2 h2 {
+    font-family: canopee;
+    font-size: 75px;
+    font-weight: 100;
+}
+
+#elem2 h3 {
+    font-family: domain;
+    font-size: 50px;
+    /* background-color: red; */
+    color: #2f2f2f;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#elem2 h6 {
+    font-family: domain;
+    font-size: 20px;
+    /* background-color: red; */
+    color: #2f2f2f;
+    font-weight: 100;
+}
+
+#page1 h1 {
+    font-size: 700px;
+    letter-spacing: -25px;
+    font-weight: 100;
+    font-family: canopee;
+    background-color: #1C1C19;
+    color: #C4BCB3;
+    line-height: 600px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#page2 {
+    height: 150vh;
+    width: 100%;
+    background-color: #C4BCB3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 40px;
+}
+
+#page2-left {
+    height: 100%;
+    padding-right: 50px;
+    width: 35%;
+    /* background-color: red; */
+    border-right: 1px solid #4b4b4b;
+}
+
+#page2-left h2 {
+    font-size: 150px;
+    font-family: canopee;
+    line-height: 150px;
+    font-weight: 100;
+}
+
+#page2-left h2 span {
+    font-size: 210px;
+    font-weight: 900;
+}
+
+#page2-left img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-left p {
+    font-size: 34px;
+    font-family: domain;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+#page2-right {
+    height: 100%;
+    width: 70%;
+    padding: 0 60px;
+}
+
+#page2-right img {
+    height: 53%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#page2-right h1 {
+    font-family: canopee;
+    font-size: 140px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+#page3 {
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #C4BCB3;
+}
+
+#page3 h1 {
+    font-size: 550px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    background-color: #1C1C19;
+    width: fit-content;
+    color: #C4BCB3;
+    margin-left: 2%;
+    padding: 0 20px;
+    line-height: 500px;
+    font-family: canopee;
+}
+
+#page3 img {
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #C4BCB3;
+}
+
+#page4-left {
+    width: 65%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page4-right {
+    width: 35%;
+    height: 100%;
+    padding: 80px 60px;
+}
+
+#page4-right p {
+    font-size: 34px;
+    font-family: domain;
+    font-weight: 100;
+    color: #2f2f2f;
+    margin-bottom: 150px;
+    line-height: 35px;
+}
+
+#page4-right #anda {
+    height: 260px;
+    background-color: #CAC1B6;
+    border: 1px solid #2f2f2fc6;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#anda h1 {
+    font-size: 100px;
+    font-weight: 100;
+    font-family: canopee;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-26%);
+    transition: all ease 0.6s;
+}
+
+#anda img {
+    height: 60px;
+    transition: all ease 0.6s;
+
+    transform: translateX(-120%);
+}
+
+#anda:hover img {
+    transform: translateX(76%);
+
+}
+
+#anda:hover h1 {
+    transform: translateX(100%);
+
+}
+
+#page5 {
+    padding: 25px 0;
+    width: 100%;
+    background-color: #C4BCB3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page5::-webkit-scrollbar {
+    display: none;
+}
+
+#page5 h1 {
+    font-size: 100px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    /* background-color: red; */
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#page5 h1 span {
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #C4BCB3;
+    padding: 0 12px;
+}
+
+#page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #C4BCB3;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 34px));
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="page1">
+            <div id="nav">
+                <h5>Amsterdam, NL</h5>
+                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f7f87c8b81a6e7a214312f0_header.svg"
+                    alt="">
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="elems">
+                <div id="elem1">
+                    <div id="image-div">
+                        <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/615d9672cc65f12c9ab25f21_thumbnail-small.jpeg?"
+                            alt="">
+                    </div>
+                    <h4>AVRO | KO <span>NEW</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio saepe rerum dolorem
+                        necessitatibus nam id exercitationem nobis nisi optio?</p>
+                </div>
+                <div id="elem2">
+                    <h2>All Work!</h2>
+                    <h3>A Featured selection <br>the latest work- <br>of the last years.</h3>
+                    <h6>Tip! Drag sideways to navigate</h6>
+                </div>
+                <div id="elem3">
+                    <div id="image-div">
+                        <img src="https://uploads-ssl.webflow.com/5f9085a4041dd5427c5ac8ae/645b5439577bd35377de8c43_thumbnail-small.webp?"
+                            alt="">
+                    </div>
+                    <h4>The roger hub <span>NEW</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio saepe rerum dolorem
+                        necessitatibus nam id exercitationem nobis nisi optio?</p>
+                </div>
+
+            </div>
+            <h1>MIRANDA</h1>
+        </div>
+        <div id="page2">
+            <div id="page2-left">
+                <h2>Interative <span>artist!</span></h2>
+                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c6ce3bc0c7d1cd4ca847e_avatar-star-p-800.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque, accusamus nam ipsa asperiores soluta amet nisi veritatis mollitia dolorum est deserunt quidem assumenda enim tempore quia fuga eaque eum.</p>
+            </div>
+            <div id="page2-right">
+                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c62f4c78c4ba46a1268be_avatar-1-p-2000.jpeg" alt="">
+                <h1>Digital Art Director Interative Designer Creative developer based in amsterdam, NL.</h1>
+            </div>
+        </div>
+        <div id="page3">
+            <h1>Website</h1>
+            <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/60474834660f934090d42877_stamp.png" alt="">
+        </div>
+        <div id="page4">
+            <div id="page4-left">
+                <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/605c679f33f67d3dd00b04b4_avatar-3.jpeg" alt="">
+            </div>
+            <div id="page4-right">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, obcaecati. Ut tempora doloribus consequatur odio perspiciatis neque minima sapiente delectus. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus exercitationem tenetur minima, nihil reprehenderit sapiente consequatur laboriosam quae cupiditate velit impedit eum quisquam excepturi.</p>
+                <div id="anda">
+                    <img src="https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/61001a3509319b6ae39e156b_arrow-long.svg" alt="">
+                    <h1>All Work</h1>
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <h1>Let's create something together <span>Email me</span></h1>
+            <h1>Let's create something together <span>Email me</span></h1>
+            <h1>Let's create something together <span>Email me</span></h1>
+
+        </div>
+        <div id="page6">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#main'),
+            smooth: true
+        });
+        
+        var tl = gsap.timeline()
+        
+        tl.to("#page1",{
+            y:"100vh",
+            scale:0.6,
+            duration:0
+        })
+        tl.to("#page1",{
+            y:"30vh",
+            duration:1,
+            delay:1
+        })
+        tl.to("#page1",{
+            y:"0vh",
+            rotate:360,
+            scale:1,
+            duration:0.7
+        })
+        </script>
+
+</body>
+
+</html>

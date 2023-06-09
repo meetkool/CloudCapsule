@@ -13,6 +13,12 @@
     <input type="text" id="domain" name="domain" value="{{ app.domain }}" required>
     <label for="plan">Plan:</label>
     <input type="text" id="plan" name="plan" value="{{ app.plan }}" required>
+    <h2>Additional Files</h2>
+    {% for file in app.files %}
+      <p>{{ file }}</p>
+    {% endfor %}
+    <label for="additional_files">Upload additional files:</label>
+    <input type="file" id="additional_files" name="additional_files[]" multiple>
     <button type="submit">Save Changes</button>
   </form>
 </body>

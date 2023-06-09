@@ -1,14 +1,17 @@
-from flask import Flask, render_template, redirect, request, flash
+import os
+import re
+import logging
+from flask import Flask, render_template, redirect, request, flash, send_from_directory
 from flask_pymongo import PyMongo
 from flask_login import LoginManager, login_user, logout_user, login_required, UserMixin, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
 from bson.objectid import ObjectId
-import re
-import logging
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/your_database'
+app.config['WEBSITES_FOLDER'] = 'websites'
 mongo = PyMongo(app)
 login_manager = LoginManager(app)
 login_manager.login_view = "login"
@@ -36,6 +39,7 @@ class HostingApplication:
         self.domain = app_data["domain"]
         self.plan = app_data["plan"]
         self.user_id = app_data["user_id"]
+        self.website_id = app_data.get("website_id", None)
 
 @app.route("/")
 def home():
@@ -119,12 +123,24 @@ def create_app():
         name = request.form["name"]
         domain = request.form["domain"]
         plan = request.form["plan"]
+        website_file = request.files["website_file"]
+
+        user_folder = os.path.join(app.config['WEBSITES_FOLDER'], str(current_user.id))
+        if not os.path.exists(user_folder):
+            os.makedirs(user_folder)
+
+        website_id = str(ObjectId())
+        filename = secure_filename(website_file.filename)
+        website_path = os.path.join(user_folder, website_id)
+        os.makedirs(website_path)
+        website_file.save(os.path.join(website_path, filename))
 
         app_data = {
             "name": name,
             "domain": domain,
             "plan": plan,
-            "user_id": current_user.id
+            "user_id": current_user.id,
+            "website_id": website_id
         }
         app_id = mongo.db.apps.insert_one(app_data).inserted_id
 
@@ -132,6 +148,7 @@ def create_app():
         return redirect("/dashboard")
 
     return render_template("create_app.html")
+
 
 
 @app.route("/apps/<app_id>/delete", methods=["POST"])
@@ -172,10 +189,15 @@ def edit_app(app_id):
     app = HostingApplication(app_data)
     return render_template("edit_app.html", app=app)
 
+@app.route('/websites/<user_id>/<website_id>/<path:filename>')
+def serve_website(user_id, website_id, filename):
+    user_folder = os.path.join(app.config['WEBSITES_FOLDER'], user_id, website_id)
+    return send_from_directory(user_folder, filename)
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("error.html", error="Page not found."), 404
-
 
 if __name__ == "__main__":
     app.run(debug=True)
