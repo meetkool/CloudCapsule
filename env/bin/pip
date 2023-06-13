@@ -1,4 +1,4 @@
-#!/home/meet/projects/Hosting-Platform/env/bin/python3
+#!/home/meet/projects/Hosting-Platform/env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
