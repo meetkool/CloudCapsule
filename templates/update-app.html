@@ -1,18 +1,25 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
-    <h1>Update App</h1>
-
-    <form action="{{ url_for('update_app', id=app._id) }}" method="POST">
-        <label for="name">App Name:</label>
+    <form method="POST">
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" value="{{ app.name }}" required>
-        <br>
-        <label for="type">Type:</label>
-        <select id="type" name="type" required>
-            <option value="Ubuntu" {% if app.type == "Ubuntu" %} selected {% endif %}>Ubuntu</option>
-            <option value="Apache" {% if app.type == "Apache" %} selected {% endif %}>Apache</option>
-        </select>
-        <br>
-        <input type="submit" value="Update">
+
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" value="{{ app.type }}" required>
+
+        <button type="submit">Update</button>
+
+        <!-- Check button -->
+        <button type="submit" name="action" value="Check" class="btn btn-info">Check</button>
+
+        <!-- Stop button -->
+        <button type="submit" name="action" value="Stop" class="btn btn-danger">Stop</button>
+
+        <!-- Start button -->
+        <button type="submit" name="action" value="Start" class="btn btn-success">Start</button>
     </form>
+
+    <!-- URL Viewing button -->
+    <a href="{{ app.url }}" target="_blank" class="btn btn-primary">View URL</a>  <!-- Assuming app.url has the URL -->
 {% endblock %}

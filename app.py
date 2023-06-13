@@ -270,21 +270,74 @@ def get_apps():
 
 
 
-@app.route('/update-app/<id>', methods=['POST'])
+# @app.route('/update-app/<id>', methods=['POST', 'GET'])
+# def update_app(id):
+#     if request.method == 'POST':
+#         if 'action' in request.form:
+#             app = mongo.db.apps.find_one({"_id": ObjectId(id)})
+#             container_name = app['name']  # assuming 'name' corresponds to the docker container name
+
+#             if request.form.get('action') == 'Check':
+#                 is_running = script.check_container(container_name)
+#                 flash(f"App is {'running' if is_running else 'not running'}!", 'success' if is_running else 'danger')
+#             elif request.form.get('action') == 'Stop':
+#                 script.stop_container(container_name)
+#                 flash("App successfully stopped!", 'success')
+#             elif request.form.get('action') == 'Start':
+#                 script.start_container(container_name)
+#                 flash("App successfully started!", 'success')
+#         else:
+#             name = request.form.get('name')
+#             app_type = request.form.get('type')
+
+#             # Check if the name or type is not provided
+#             if not name or not app_type:
+#                 flash("App name and type are required!")
+#                 return render_template('update.html', id=id)
+
+#             # Update the app in the database
+#             mongo.db.apps.update_one({"_id": ObjectId(id)}, {"$set": {"name": name, "type": app_type}})
+#             flash("App successfully updated!")
+    
+#     app = mongo.db.apps.find_one({"_id": ObjectId(id)})
+#     return render_template('update.html', app=app) 
+
+
+
+@app.route('/update-app/<id>', methods=['POST', 'GET'])
 def update_app(id):
-    name = request.form.get('name')
-    app_type = request.form.get('type')
+    if request.method == 'POST':
+        if 'action' in request.form:
+            app = mongo.db.apps.find_one({"_id": ObjectId(id)})
+            container_name = app['name']  # assuming 'name' corresponds to the docker container name
 
-    # Check if the name or type is not provided
-    if not name or not app_type:
-        flash("App name and type are required!")
-        return redirect(url_for('update-app', id=id))
+            if request.form.get('action') == 'Check':
+                is_running = script.check_container(container_name)
+                flash(f"App is {'running' if is_running else 'not running'}!", 'success' if is_running else 'danger')
+            elif request.form.get('action') == 'Stop':
+                script.stop_container(container_name)
+                flash("App successfully stopped!", 'success')
+            elif request.form.get('action') == 'Start':
+                script.start_container(container_name)
+                flash("App successfully started!", 'success')
+        else:
+            name = request.form.get('name')
+            app_type = request.form.get('type')
 
-    # Update the app in the database
-    mongo.db.apps.update_one({"_id": ObjectId(id)}, {"$set": {"name": name, "type": app_type}})
+            # Check if the name or type is not provided
+            if not name or not app_type:
+                flash("App name and type are required!")
+                return render_template('update.html', id=id)
 
-    flash("App successfully updated!")
-    return redirect(url_for('dashboard'))
+            # Update the app in the database
+            mongo.db.apps.update_one({"_id": ObjectId(id)}, {"$set": {"name": name, "type": app_type}})
+            flash("App successfully updated!")
+    
+    app = mongo.db.apps.find_one({"_id": ObjectId(id)})
+    return render_template('update.html', app=app)
+
+
+
 
 @app.route('/delete-app/<id>', methods=['POST'])
 def delete_app(id):
@@ -311,7 +364,7 @@ def delete_app(id):
     return redirect(url_for('dashboard'))
 
 
-@app.route('/get-app/<id>', methods=['GET'])
+@app.route('/get-app/<id>', methods=['GET', 'POST', 'PUT'])
 def get_app(id):
     app = mongo.db.apps.find_one({"_id": ObjectId(id)})
     return render_template('update-app.html', app=app)

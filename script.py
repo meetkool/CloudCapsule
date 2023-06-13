@@ -28,7 +28,6 @@ def display_help():
     """
     print(help_banner)
 
-
 def run_command(command):
     try:
         return subprocess.check_output(command, shell=True).decode().strip()

@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Register</title>
-    <!-- Add CSS or other head content here as needed -->
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>Register</h1>
-    
+
     <!-- Display flash messages if they exist -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul class="flashes">
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
             </ul>
         {% endif %}
     {% endwith %}
-    
+
     <!-- Register Form -->
     <form method="POST">
         <label for="email">Email:</label><br>
@@ -34,7 +30,4 @@
 
         <input type="submit" value="Register">
     </form>
-
-    <!-- Add footer or other content here as needed -->
-</body>
-</html>
+{% endblock %}
