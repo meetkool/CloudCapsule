@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Create App</h2>
+
+    <form method="post" action="{{ url_for('create_app') }}">
+        <div class="form-group">
+            <label for="name">App Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="type">App Type:</label>
+            <select class="form-control" id="type" name="type" required>
+                <!-- <option value="ubuntu">Ubuntu</option> -->
+                <option value="apache">Apache</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create App</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-{{ messages[0][1] }}">
+                {{ messages[0][0] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <div class="output">
+        {% if output %}
+            <div class="alert alert-danger">
+                {{ output }}
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        // Get the flash message from the template
+        var flashMessage = "{{ get_flashed_messages()|first }}";
+
+        // Check if a flash message exists
+        if (flashMessage) {
+            // Show the flash message as an alert
+            alert(flashMessage);
+        }
+    </script>
+{% endblock %}

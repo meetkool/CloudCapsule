@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Apps</h2>
+    <a href="{{ url_for('create_app') }}" class="btn btn-primary">Create App</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>URL</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for app in apps %}
+            <tr>
+                <td>{{ app.name }}</td>
+                <td>{{ app.type }}</td>
+                <td><a href="{{ get_link(app.name) }}">Open</a></td>
+                <td>
+                    <a href="{{ url_for('get_app', id=app._id) }}" class="btn btn-info">Update</a>
+                    <form id="delete-form" action="{{ url_for('delete_app', id=app._id) }}" method="post" style="display: inline-block;">
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <script>
+                            document.getElementById('delete-form').addEventListener('submit', function(event) {
+                                // Prompt the user to confirm the deletion
+                                var confirmed = confirm("Are you sure you want to delete this app? This action cannot be undone.");
+                        
+                                // If the user cancels the confirmation, prevent form submission
+                                if (!confirmed) {
+                                    event.preventDefault();
+                                }
+                            });
+                        
+                            // Get the flash message from the server and display an alert if it exists
+                            var flashMessage = "{{ get_flashed_messages()[-1] }}" // Get the latest flash message
+                            if (flashMessage) {
+                                alert(flashMessage);
+                            }
+                        </script>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

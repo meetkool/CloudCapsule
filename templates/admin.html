@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <ul>
+        {% for user in users %}
+            <li>
+                Username: {{ user.username }}<br>
+                Email: {{ user.email }}
+                {% if user.admin %}
+                    (Admin)
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

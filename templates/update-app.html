@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Update App</h1>
+
+    <form action="{{ url_for('update_app', id=app._id) }}" method="POST">
+        <label for="name">App Name:</label>
+        <input type="text" id="name" name="name" value="{{ app.name }}" required>
+        <br>
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <option value="Ubuntu" {% if app.type == "Ubuntu" %} selected {% endif %}>Ubuntu</option>
+            <option value="Apache" {% if app.type == "Apache" %} selected {% endif %}>Apache</option>
+        </select>
+        <br>
+        <input type="submit" value="Update">
+    </form>
+{% endblock %}

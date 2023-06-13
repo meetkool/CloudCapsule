@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Apps</h2>
+    <a href="{{ url_for('create_app') }}" class="btn btn-primary">Create App</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>URL</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for app in apps %}
+            <tr>
+                <td>{{ app.name }}</td>
+                <td>{{ app.type }}</td>
+                <td><a href="{{ url_for('get_app_url', id=app._id) }}" class="btn btn-success">View URL</a></td>
+                <td>
+                    <a href="{{ url_for('get_app', id=app._id) }}" class="btn btn-info">Update</a>
+                    <form id="delete-form" action="{{ url_for('delete_app', id=app._id) }}" method="post" style="display: inline-block;">
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
