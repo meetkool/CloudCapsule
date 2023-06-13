@@ -1,6 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+<head>
+    <style>
+        .flash-messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flash-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flash-message.success {
+    background-color: #c3e6cb;
+    color: #155724;
+}
+
+.flash-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+    </style>
+</head>
     <form method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" value="{{ app.name }}" required>
@@ -21,5 +47,16 @@
     </form>
 
     <!-- URL Viewing button -->
-    <a href="{{ app.url }}" target="_blank" class="btn btn-primary">View URL</a>  <!-- Assuming app.url has the URL -->
+    <td><a href="{{ url_for('get_app_url', id=app._id) }}" class="btn btn-success">View URL</a></td>  <!-- Assuming app.url has the URL -->
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+                <li class="flash-message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
 {% endblock %}
