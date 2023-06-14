@@ -62,7 +62,7 @@ def create_container(container, container_type, port_number, second_port, ssh_po
     else:
         result1 = run_command(f"docker create --restart unless-stopped -p {port_number}:80 -p {second_port}:7662 -p {ssh_port}:22 --name {container} -h {container} kooljool/droplet:latest")
         result2 = run_command(f"docker start {container}")
-        result3 = run_command(f"docker exec -it {container} /bin/bash /usr/bin/ddrun")
+        result3 = run_command(f"bash -c './dockerrun {container}' ")
         link = run_command(f"docker exec {container} cat /var/www/dump/files.hostname")
         result4 = f"{link}/info.server.php"
         # results.append(result1)

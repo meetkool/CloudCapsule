@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+docker exec $1 /bin/bash /usr/bin/ddrun

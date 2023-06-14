@@ -1,0 +1,64 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.104:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+127.0.0.1 - - [14/Jun/2023 11:45:53] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:45:55] "GET /get-app-url/64895ad849f8a033444587fe HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:45:57] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Jun/2023 11:45:57] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:45:59] "GET /create-app HTTP/1.1" 200 -
+ * Detected change in '/home/meet/projects/Hosting-Platform/script.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+ * Detected change in '/home/meet/projects/Hosting-Platform/script.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+ * Detected change in '/home/meet/projects/Hosting-Platform/script.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+127.0.0.1 - - [14/Jun/2023 11:47:47] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:47:55] "[32mPOST /delete-app/64895ad849f8a033444587fe HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Jun/2023 11:47:57] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:47:58] "GET /create-app HTTP/1.1" 200 -
+bash: line 1: dockerrun: command not found
+cat: /var/www/dump/files.hostname: No such file or directory
+127.0.0.1 - - [14/Jun/2023 11:48:10] "POST /create-app HTTP/1.1" 200 -
+ * Detected change in '/home/meet/projects/Hosting-Platform/script.py', reloading
+Started aditya
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+127.0.0.1 - - [14/Jun/2023 11:49:25] "[32mPOST /create-app HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Jun/2023 11:49:25] "GET /create-app HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:49:28] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:49:35] "[32mPOST /delete-app/64895ba2de03aec69ed6eea8 HTTP/1.1[0m" 302 -
+127.0.0.1 - - [14/Jun/2023 11:49:37] "GET /dashboard HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.104:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-628-812
+127.0.0.1 - - [14/Jun/2023 11:50:04] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:50:05] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jun/2023 11:50:07] "GET /create-app HTTP/1.1" 200 -
+the input device is not a TTY
+cat: /var/www/dump/files.hostname: No such file or directory
+127.0.0.1 - - [14/Jun/2023 11:50:15] "POST /create-app HTTP/1.1" 200 -
