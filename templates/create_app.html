@@ -20,6 +20,8 @@
         <button type="submit" class="btn btn-primary">Create App</button>
     </form>
 
+    <div id="spinner" class="spinner-border text-primary" style="display: none;"></div>
+
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <div class="alert alert-{{ messages[0][1] }}">
@@ -36,6 +38,16 @@
         {% endif %}
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            $('#spinner').show();
+            $(this).find('button').text('Creating...');
+            $(this).find('button').prop('disabled', true);
+        });
+    });
+    </script>
     <script>
         // Get the flash message from the template
         var flashMessage = "{{ get_flashed_messages()|first }}";
