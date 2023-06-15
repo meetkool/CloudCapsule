@@ -69,7 +69,7 @@ def create_container(container, container_type, port_number, second_port, ssh_po
         # results.append(result2)
         results.append(result4)
     
-    results.append(f"Created {container}")
+    results.append(f"Created {container} \n |->Goes to this complete url")
     return "\n".join(results)
 
 def get_link(container):
