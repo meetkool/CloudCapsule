@@ -152,7 +152,7 @@ from random import randint
 @login_required
 def create_app():
     if request.method == 'POST':
-        name = request.form.get('name')
+        name = request.form.get('name').replace(" ", "")  # This removes spaces from the name
         app_type = request.form.get('type')
 
         # Check if the name or type is not provided
