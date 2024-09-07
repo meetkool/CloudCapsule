@@ -1,4 +1,4 @@
-name: Tmate Session
+name: Tmate Debug Session
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
         default: '30'
 
 jobs:
-  tmate_session:
+  debug:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,6 +19,12 @@ jobs:
       with:
         limit-access-to-actor: true
         timeout-minutes: ${{ github.event.inputs.duration }}
-      
-    - name: Don't kill instace
-      run: sleep 1h # Prevents GitHub Actions from terminating the workflow after the tmate session ends
+
+    - name: Keep runner alive
+      run: sleep 1h
+
+    - name: Cleanup
+      if: always()
+      run: |
+        echo "Tmate session has ended. If you need to reconnect, you'll need to run the workflow again."
+        echo "Remember to terminate this workflow manually if it's still running to save on GitHub Actions minutes."
