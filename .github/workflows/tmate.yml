@@ -1,0 +1,24 @@
+name: Tmate Session
+
+on:
+  workflow_dispatch:
+    inputs:
+      duration:
+        description: 'Duration of the tmate session in minutes'
+        required: true
+        default: '30'
+
+jobs:
+  tmate_session:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      with:
+        limit-access-to-actor: true
+        timeout-minutes: ${{ github.event.inputs.duration }}
+      
+    - name: Don't kill instace
+      run: sleep 1h # Prevents GitHub Actions from terminating the workflow after the tmate session ends
