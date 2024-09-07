@@ -1,0 +1,14 @@
+name: Keep VNC Active
+
+on:
+  schedule:
+    - cron: '*/14 * * * *'  # Runs every 14 minutes
+
+jobs:
+  ping_vnc:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Curl VNC server
+      run: |
+        curl -I https://app.vocon-it.com/intellij-desktop/vjufggir9ifwx3zadevhxoxkj7q2/DFbxezmW-8TiYkkVm-to4zVHec/?password=DFbxezmW-8TiYkkVm-to4zVHec&path=DFbxezmW-8TiYkkVm-to4zVHec/websockify&view_clip=1&resize=remote/
+      continue-on-error: true
