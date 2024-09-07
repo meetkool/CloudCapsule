@@ -3,12 +3,31 @@ name: Keep VNC Active
 on:
   schedule:
     - cron: '*/14 * * * *'  # Runs every 14 minutes
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  ping_vnc:
+  keep_vnc_active:
     runs-on: ubuntu-latest
     steps:
-    - name: Curl VNC server
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
       run: |
-        curl -I https://app.vocon-it.com/intellij-desktop/vjufggir9ifwx3zadevhxoxkj7q2/DFbxezmW-8TiYkkVm-to4zVHec/?password=DFbxezmW-8TiYkkVm-to4zVHec&path=DFbxezmW-8TiYkkVm-to4zVHec/websockify&view_clip=1&resize=remote/
-      continue-on-error: true
+        python -m pip install --upgrade pip
+        pip install selenium webdriver_manager
+
+    - name: Install Chrome
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+
+    - name: Run VNC keep-alive script
+      run: |
+        python keep_vnc_active.py
+      timeout-minutes: 13  # Stop after 13 minutes to allow for the next scheduled run
