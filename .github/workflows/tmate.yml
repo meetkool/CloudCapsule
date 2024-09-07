@@ -1,30 +1,9 @@
-name: Tmate Debug Session
-
-on:
-  workflow_dispatch:
-    inputs:
-      duration:
-        description: 'Duration of the tmate session in minutes'
-        required: true
-        default: '30'
-
+name: CI
+on: [push]
 jobs:
-  debug:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
-      with:
-        limit-access-to-actor: true
-        timeout-minutes: ${{ github.event.inputs.duration }}
-
-    - name: Keep runner alive
-      run: sleep 1h
-
-    - name: Cleanup
-      if: always()
-      run: |
-        echo "Tmate session has ended. If you need to reconnect, you'll need to run the workflow again."
-        echo "Remember to terminate this workflow manually if it's still running to save on GitHub Actions minutes."
