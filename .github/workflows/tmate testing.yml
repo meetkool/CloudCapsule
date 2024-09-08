@@ -7,15 +7,14 @@ on:
 jobs:
   debug:
     runs-on: ubuntu-latest
-    timeout-minutes: 360  # 6 hours
 
     steps:
     - uses: actions/checkout@v4
-    
     - name: Setup tmate session and keep alive
       uses: mxschmitt/action-tmate@v3
+      timeout-minutes: 350
       with:
         limit-access-to-actor: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      timeout-minutes: 359  # Just under 6 hours to ensure the job can complete
+        # Just under 6 hours to ensure the job can complete
