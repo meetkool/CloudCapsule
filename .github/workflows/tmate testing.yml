@@ -1,4 +1,4 @@
-name: CI with Tmate Debugging
+name: tmate testing
 
 on:
   workflow_dispatch:
