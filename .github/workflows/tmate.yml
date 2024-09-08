@@ -12,21 +12,3 @@ jobs:
       uses: mxschmitt/action-tmate@v3
       with:
         limit-access-to-actor: false
-
-    - name: Debug Info
-      run: |
-        echo "Tmate session info:"
-        echo "==================="
-        cat /tmp/tmate.log
-        echo "==================="
-        echo "Environment variables:"
-        env
-        echo "==================="
-        echo "Current directory contents:"
-        ls -la
-        echo "==================="
-        echo "SSH client version:"
-        ssh -V
-
-    - name: Keep session alive
-      run: sleep 1h
