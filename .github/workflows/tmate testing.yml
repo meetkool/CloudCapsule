@@ -16,5 +16,5 @@ jobs:
       with:
         limit-access-to-actor: false
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         # Just under 6 hours to ensure the job can complete
